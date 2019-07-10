@@ -6,6 +6,30 @@ body{
 center{
     margin: 25px 0 0;
     font: 3em "Trebuchet MS";
-    color: white;
+    color: #FF9900;
 }
+
+h1{
+    color: #FF9900;
+    font: 2em "Trebuchet MS";
+    margin: 40px 0px 0px 30px;
+}
+
+li{
+    font: 1.25em "Trebuchet MS";
+    margin-left: 45px;
+}
+
+
+a{
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+
+a:hover{
+    transition: 1s all ease;
+    color: #FF9900;
+}
+
 
