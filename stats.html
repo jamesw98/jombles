@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Jombles's Webzone</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body onload="calc_stats()">
+    <div class="container">
+        <button class="btn" onclick="location.href='index.html'" id="buttonShort"\><i class="fa fa-home"></i></button>
+
+        <center>Stat Calculator</center>
+
+        <center>Str  <input type="text" id="str" value=10> <p1 id="strMod"/></p1></center>
+        <center>Dex  <input type="text" id="dex" value=10> <p1 id="dexMod"/></p1></center>
+        <center>Con  <input type="text" id="con" value=10> <p1 id="conMod"/></p1></center>
+        <center>Int  <input type="text" id="int" value=10> <p1 id="intMod"/></p1></center>
+        <center>Wis  <input type="text" id="wis" value=10> <p1 id="wisMod"/></p1></center>
+        <center>Cha  <input type="text" id="cha" value=10> <p1 id="chaMod"/></p1></center>
+
+        <center>
+            <button onclick="calc_stats()">Calculate</button>
+        </center>
+    </div>
+</body>

@@ -38,19 +38,124 @@ const titles = [
     "R u crazy??",
     "At age six, I was born without a face",
     "Stay in school, don't do drugs, eat your teeth",
+    "Do a flip!",
 ]
 
+/**
+ * generates a random title for the home page
+ */
 function randomTitle() {
     var rand = Math.floor(Math.random() * titles.length);
     document.getElementById('titleDisplay').innerHTML = titles[rand];
 }
 
+/**
+ * dnd dice roller
+ * can be any type of die, any number of die, and accepts modifiers 
+ */
 function roll_dice() {
     var num_dice = parseInt(document.getElementById("num").value);
     var die_type = parseInt(document.getElementById("dieType").value);
     var modifier = parseInt(document.getElementById("modifier").value);
 
+
     var roll = num_dice * Math.floor(Math.random() * die_type) + modifier + 1;
+    if (isNaN(roll)) {
+        roll = "Please only enter numbers";
+    }
 
     document.getElementById('result').innerHTML = roll;
+}
+
+function calc_stats() {
+    var str = parseInt(document.getElementById("str").value);
+    var dex = parseInt(document.getElementById("dex").value);
+    var con = parseInt(document.getElementById("con").value);
+    var int = parseInt(document.getElementById("int").value);
+    var wis = parseInt(document.getElementById("wis").value);
+    var cha = parseInt(document.getElementById("cha").value);
+
+    var stats = [str, dex, con, int, wis, cha];
+    var res = ["", "", "", "", "", ""]
+
+    for (var i = 0; i < stats.length; i++) {
+        var currStat = stats[i];
+        var currResult = res[i];
+        console.log(currStat);
+        if (currStat === 1) {
+            currResult = "-5";
+            continue;
+        }
+        else if (currStat === 2 || currStat === 3) {
+            res[i] = "-4";
+            continue;
+        }
+        else if (currStat === 4 || currStat === 5) {
+            res[i] = "-3";
+            continue;
+        }
+        else if (currStat === 6 || currStat === 7) {
+            res[i] = "-2";
+            continue;
+        }
+        else if (currStat === 8 || currStat === 9) {
+            res[i] = "-1";
+            continue;
+        }
+        else if (currStat === 10 || currStat === 11) {
+            res[i] = "0";
+            continue;
+        }
+        else if (currStat === 10 || currStat === 11) {
+            res[i] = "0";
+            continue;
+        }
+        else if (currStat === 12 || currStat === 13) {
+            res[i] = "+1";
+            continue;
+        }
+        else if (currStat === 14 || currStat === 15) {
+            res[i] = "+2";
+            continue;
+        }
+        else if (currStat === 16 || currStat === 17) {
+            res[i] = "+3";
+            continue;
+        }
+        else if (currStat === 18 || currStat === 19) {
+            res[i] = "+4";
+            continue;
+        }
+        else if (currStat === 20 || currStat === 21) {
+            res[i] = "+5";
+            continue;
+        }
+        else if (currStat === 22 || currStat === 23) {
+            res[i] = "+6";
+            continue;
+        }
+        else if (currStat === 24 || currStat === 25) {
+            res[i] = "+7";
+            continue;
+        }
+        else if (currStat === 26 || currStat === 27) {
+            res[i] = "+8";
+            continue;
+        }
+        else if (currStat === 28 || currStat === 29) {
+            res[i] = "+9";
+            continue;
+        }
+        else if (currStat === 30) {
+            res[i] = "+10"
+            continue;
+        }
+    }
+
+    document.getElementById('strMod').innerHTML = res[0];
+    document.getElementById('dexMod').innerHTML = res[1];
+    document.getElementById('conMod').innerHTML = res[2];
+    document.getElementById('intMod').innerHTML = res[3];
+    document.getElementById('wisMod').innerHTML = res[4];
+    document.getElementById('chaMod').innerHTML = res[5];
 }
