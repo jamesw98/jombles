@@ -12,12 +12,17 @@ center{
 h1{
     color: #FF9900;
     font: 2em "Trebuchet MS";
-    margin: 40px 0px 0px 30px;
+    margin: 40px 0px 0px 200px;
+}
+
+h2{
+    color: #4fc3f7;
+    margin-left: 245px;
 }
 
 li{
     font: 1.25em "Trebuchet MS";
-    margin-left: 45px;
+    margin-left: 245px;
 }
 
 
@@ -30,6 +35,42 @@ a{
 a:hover{
     transition: 1s all ease;
     color: #FF9900;
+}
+
+input{
+    font: 45px "Trebuchet MS";
+    height: 50px;
+    width: 70px;
+    background: #757575;
+    box-sizing: content-box;
+    border: 1px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input:focus{
+    background: #e0e0e0;
+    transition: .25s all linear;
+    outline: none;
+}
+
+button{
+    background: #FF9900;
+    color: #660000;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    font: 20px "Trebuchet MS";
+}
+
+button:hover{
+    background: #660000;
+    color: #FF9900;
+    border: 1px;
+    outline: none;
+    cursor: pointer;
+    transition: .25s all linear;
 }
 
 

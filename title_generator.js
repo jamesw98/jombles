@@ -1,5 +1,4 @@
 const titles = [
-    // dark souls
     "Time for Crab",
     "Try jumping",
     "Illusory wall ahead",
@@ -10,24 +9,38 @@ const titles = [
     "Skeleton ahead, therefore, Hurrah!",
     "Beanpole ahead",
     "Liar ahead...",
-
-    // rlm
     "IT TOOK 12 YEARS TO MAKE!",
     "IT BROKE NEW GROUND!!!",
     "What are next?",
     "You can't spell Sony without Y",
-
-    // star_ and jerma
+    "Folding chables",
+    "You didn't notice, but your brain did",
+    "Goodnight, sweet cats",
+    "Oh my GAAAAAAAAAAAAWWWWWWD",
+    "That's right Jay",
+    "Don't ask questions just consume product then get excited for next product",
+    "Star Wars Episode One the Phantom Menace is the most disapointing thing since my son",
+    "I want that juicy Shaq meat",
+    "Always eat the cake when it's handed to you",
+    "Anythings possible with Bush in the Whitehouse",
+    "Jimmy Fallon? The only thing he should host is a parasite",
+    "AT-STs! AT-STs!",
+    "I clapped when I saw Darth Vader",
+    "A long time ago in a Galaxy Far Far Away, but no title craw",
+    "I CLAAAAPPED!!!",
+    "FUCK YOU IT'S JANUARY!",
+    "You'll be dead guy!",
     "Coffeeee, Cheetooos, Chickeeen",
     "Use the tree for cover and DRINK THE JUICE",
     "Yo. Merry Christmas",
     "Y'know, dont... say... s-swears...",
     "I TAUNT AFTER EVERY KILL",
     "R u crazy??",
+    "At age six, I was born without a face",
+    "Stay in school, don't do drugs, eat your teeth",
 ]
 
 function randomTitle(){
     var rand = Math.floor(Math.random() * titles.length);
-    console.log(rand, titles[rand]);
     document.getElementById('titleDisplay').innerHTML = titles[rand];
 }
