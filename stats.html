@@ -7,20 +7,23 @@
 </head>
 
 <body onload="calc_stats()">
-    <div class="container">
+    <div class>
         <button class="btn" onclick="location.href='index.html'" id="buttonShort"\><i class="fa fa-home"></i></button>
 
-        <center>Stat Calculator</center>
+        <div class="table">Stat Calculator</div>
 
-        <center>Str  <input type="text" id="str" value=10> <p1 id="strMod"/></p1></center>
-        <center>Dex  <input type="text" id="dex" value=10> <p1 id="dexMod"/></p1></center>
-        <center>Con  <input type="text" id="con" value=10> <p1 id="conMod"/></p1></center>
-        <center>Int  <input type="text" id="int" value=10> <p1 id="intMod"/></p1></center>
-        <center>Wis  <input type="text" id="wis" value=10> <p1 id="wisMod"/></p1></center>
-        <center>Cha  <input type="text" id="cha" value=10> <p1 id="chaMod"/></p1></center>
+        <div class="table">
+            <div class="row"><span class="cell">Str</span>  <input class="cell" type="text" id="str" value=10> <p1 class="cell" id="strMod"/></p1></div>
+            <div class="row"><span class="cell">Dex</span>  <input class="cell" type="text" id="con" value=10> <p1 class="cell" id="conMod"/></p1></div>
+            <div class="row"><span class="cell">Con</span>  <input class="cell" type="text" id="dex" value=10> <p1 class="cell" id="dexMod"/></p1></div>
+            <div class="row"><span class="cell">Int</span>  <input class="cell" type="text" id="int" value=10> <p1 class="cell" id="intMod"/></p1></div>
+            <div class="row"><span class="cell">Wis</span>  <input class="cell" type="text" id="wis" value=10> <p1 class="cell" id="wisMod"/></p1></div>
+            <div class="row"><span class="cell">Cha</span>  <input class="cell" type="text" id="cha" value=10> <p1 class="cell"id="chaMod"/></p1></div>
+        </div>
 
-        <center>
-            <button onclick="calc_stats()">Calculate</button>
-        </center>
+        <div class="table">
+            <button onclick="calc_stats()">Calculate</button> or 
+            <button onclick="random_stats()">Random</button>
+        </div>
     </div>
 </body>

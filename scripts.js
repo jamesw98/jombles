@@ -80,10 +80,9 @@ function calc_stats() {
 
     for (var i = 0; i < stats.length; i++) {
         var currStat = stats[i];
-        var currResult = res[i];
-        console.log(currStat);
+
         if (currStat === 1) {
-            currResult = "-5";
+            res[i] = "-5";
             continue;
         }
         else if (currStat === 2 || currStat === 3) {
@@ -158,4 +157,19 @@ function calc_stats() {
     document.getElementById('intMod').innerHTML = res[3];
     document.getElementById('wisMod').innerHTML = res[4];
     document.getElementById('chaMod').innerHTML = res[5];
+}
+
+/**
+ * essentially does 4d6 drop lowset, but only rolls 3 dice because why not
+ * calculates stat mods after rolling
+ */
+function random_stats() {
+    document.getElementById('str').value = (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1);
+    document.getElementById('dex').value = (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1);
+    document.getElementById('con').value = (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1);
+    document.getElementById('int').value = (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1);
+    document.getElementById('wis').value = (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1);
+    document.getElementById('cha').value = (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1);
+
+    calc_stats();
 }
