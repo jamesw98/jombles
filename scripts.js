@@ -39,6 +39,7 @@ const titles = [
     "At age six, I was born without a face",
     "Stay in school, don't do drugs, eat your teeth",
     "Do a flip!",
+    "SHOW ME WHERE IN MY INVENTORY IT GOES!"
 ]
 
 /**
