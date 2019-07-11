@@ -54,6 +54,10 @@ input:focus{
     outline: none;
 }
 
+#buttonShort{
+    width: 50px
+}
+
 button{
     background: #FF9900;
     color: #660000;
@@ -72,5 +76,3 @@ button:hover{
     cursor: pointer;
     transition: .25s all linear;
 }
-
-
