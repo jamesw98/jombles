@@ -31,7 +31,14 @@ h1{
 
 h2{
     color: #4fc3f7;
-    margin-left: 245px;
+    margin-left: 50px;
+    font: .5em "Trebuchet MS";
+    text-align: left;
+}
+
+#notTop{
+    margin-top: -15px;
+    text-align: left;
 }
 
 li{
@@ -39,6 +46,10 @@ li{
     margin-left: 245px;
 }
 
+#small{
+    font-size: 1em;
+    color: #757575;
+}
 
 a{
     color: #4fc3f7;
@@ -48,7 +59,7 @@ a{
 
 a:hover{
     transition: 1s all ease;
-    color: #FF9900;
+    color: #660000;
 }
 
 input{
