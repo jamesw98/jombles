@@ -59,6 +59,9 @@ function roll_dice() {
     var die_type = parseInt(document.getElementById("dieType").value);
     var modifier = parseInt(document.getElementById("modifier").value);
 
+    if (isNaN(modifier)) {
+        modifier = 0;
+    }
 
     var roll = num_dice * Math.floor(Math.random() * die_type) + modifier + 1;
     if (isNaN(roll)) {
