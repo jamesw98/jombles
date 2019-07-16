@@ -30,7 +30,7 @@ h1{
 }
 
 h2{
-    color: #4fc3f7;
+    color: #757575;
     margin-left: 50px;
     font: .5em "Trebuchet MS";
     text-align: left;
@@ -42,8 +42,17 @@ h2{
 }
 
 li{
-    font: 1.25em "Trebuchet MS";
-    margin-left: 245px;
+    font: 1.5em "Trebuchet MS";
+    color: transparent;
+}
+
+#link{
+    font-size: 2.5em;
+}
+
+#links{
+    margin-top: 100px;
+    text-align: center;
 }
 
 #small{
