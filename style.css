@@ -140,3 +140,47 @@ button:hover{
 #buttonShort:hover{
     color: #660000;
 }
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: transparent;
+    font: 2em "Trebuchet MS";
+    color: #4fc3f7;
+    cursor: pointer;
+    padding: 20px 100px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+    
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    color: #FF9900;
+    background-color: transparent;
+}
+
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+    
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 170px;
+    display: none;
+    overflow: hidden;
+    font: 1.5em "Trebuchet MS";
+    color: #757575;
+    background-color: transparent;
+}
+
+.valid{
+    padding: 0 50px;
+    color: green;
+}
+
+.invalid{
+    padding: 0 50px;
+    color: red;
+}
