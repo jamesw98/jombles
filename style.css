@@ -173,6 +173,10 @@ p{
     background-color: transparent;
 }
 
+.sublevel{
+    padding: 0 50px;
+}
+
 .valid{
     padding: 0 50px;
     color: green;
