@@ -42,6 +42,20 @@ const titles = [
     "SHOW ME WHERE IN MY INVENTORY IT GOES!"
 ]
 
+const discChoices = ["putter", "midrange", "fairway driver", "distance driver"]
+const shotChoices = ["hyzer", "flat", "anhyzer"]
+const gripChoices = ["backhand", "sidearm"]
+
+function getThrow(){
+    var randDisc = Math.floor(Math.random() * discChoices.length)
+    var randShot = Math.floor(Math.random() * shotChoices.length)
+    var randGrip = Math.floor(Math.random() * gripChoices.length)
+
+    document.getElementById('disc').innerHTML = discChoices[randDisc];
+    document.getElementById('angle').innerHTML = shotChoices[randShot];
+    document.getElementById('grip').innerHTML = gripChoices[randGrip];
+}
+
 /**
  * generates a random title for the home page
  */
